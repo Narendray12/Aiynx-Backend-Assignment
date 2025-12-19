@@ -120,17 +120,6 @@ Benefits:
 
 ---
 
-## 10. Supabase Considerations
-
-Supabase is used as a managed PostgreSQL provider.
-
-Key considerations:
-- Application tables are created manually (`public.users`)
-- Supabase Auth tables (`auth.users`) are untouched
-- Row Level Security (RLS) is disabled for development simplicity
-
----
-
 ## 11. Testing Approach
 
 The API was tested using Postman by:
