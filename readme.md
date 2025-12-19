@@ -36,20 +36,25 @@ maintainable, and deployment-ready.
 
 ## Project Structure
 
-AIYNX/ ├── cmd/server/main.go \# Application entry point\
-├── config/ \# Environment configuration loader\
-├── db/ │ ├── migrations/ \# Database migrations\
-│ └── sqlc/ \# SQLC schema and generated code\
-├── internal/ │ ├── handler/ \# HTTP handlers\
-│ ├── service/ \# Business logic\
-│ ├── repository/ \# Database access layer\
-│ ├── routes/ \# Route definitions\
-│ ├── middleware/ \# Custom middleware\
-│ ├── models/ \# Domain models\
-│ └── logger/ \# Logger configuration\
-├── .env \# Environment variables (local only)\
-├── Dockerfile \# Docker configuration\
-├── go.mod\
+AIYNX/
+├── cmd/
+│   └── server/
+│       └── main.go          # Application entry point
+├── config/                  # Environment configuration loader
+├── db/
+│   ├── migrations/          # Database migrations
+│   └── sqlc/                # SQLC schema and generated code
+├── internal/
+│   ├── handler/             # HTTP handlers
+│   ├── service/             # Business logic
+│   ├── repository/          # Database access layer
+│   ├── routes/              # Route definitions
+│   ├── middleware/          # Custom middleware
+│   ├── models/              # Domain models
+│   └── logger/              # Logger configuration
+├── .env                     # Environment variables (local only)
+├── Dockerfile               # Docker configuration
+├── go.mod
 └── go.sum
 
 ------------------------------------------------------------------------
